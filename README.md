@@ -1,6 +1,6 @@
 # Smart-TodoList
 
-# Techniques used: NodeJs, Express, Ejs and Bootstrap.
+Techniques used: NodeJs, Express, Ejs and Bootstrap.
 
 Description: 
 
