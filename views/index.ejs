@@ -23,9 +23,13 @@
       </form>
     </div>
     <div class="row">
+
+
       <ul id="list" class="list col-lg-6 col-8 mx-auto">
-        <!-- <li>this is a todo item <input type="checkbox" class="checkbox"></li>
-        <li>this is a todo item <input type="checkbox" class="checkbox"></li> -->
+
+       <% for(var i = 0; i < toDoList.length; i++) { %>
+        <li> <%= toDoList[i]; %> </li>
+       <% } %>
       </ul>
     </div>
     <div class="row">
