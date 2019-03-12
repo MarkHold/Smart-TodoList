@@ -13,11 +13,12 @@
   <div class="container">
     <h1 class="display-2 text-center">TodoList</h1>
     <div class="row">
-      <form id="form" class="col-lg-6 col-8 mx-auto">
+      <form id="form" class="col-lg-6 col-8 mx-auto" action="/addToList" method="POST">
         <div class="input-group">
-          <input id="input" class="form-control" placeholder="Enter todo list item" value="this is a todo list item">
+
+          <input type="text" name="item" class="form-control" placeholder="Enter todo list item">
           <span>
-            <button id="btn" type="button" class="btn btn-primary">Submit</button>
+            <button id="btn" type="submit" class="btn btn-primary">Submit</button>
           </span>
         </div>
       </form>
@@ -28,7 +29,7 @@
       <ul id="list" class="list col-lg-6 col-8 mx-auto">
 
        <% for(var i = 0; i < toDoList.length; i++) { %>
-        <li> <%= toDoList[i]; %> </li>
+        <li> <%= toDoList[i] %> </li>
        <% } %>
       </ul>
     </div>
